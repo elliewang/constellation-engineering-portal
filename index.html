@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#0b1425">
+    <meta name="description"
+        content="Lead software engineering interactive portfolio: Azure cloud, .NET, delivery, data products, quality and agent assistant.">
+    <title>GridForge | Engineering Command Center</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="app">
+        <aside class="sidebar">
+            <div class="brand"><span class="brandmark">✦</span><span><strong>GridForge</strong><small>ENGINEERING
+                        COMMAND CENTER</small></span></div>
+            <div class="side-label">WORKSPACE</div>
+            <nav id="nav"><button class="navitem active" data-page="overview">◫ <span>Overview</span></button><button
+                    class="navitem" data-page="delivery">▤ <span>Product delivery</span></button><button class="navitem"
+                    data-page="architecture">⬡ <span>Cloud architecture</span></button><button class="navitem"
+                    data-page="data">▥ <span>Data platform</span></button><button class="navitem" data-page="quality">✓
+                    <span>Quality & DevOps</span></button><button class="navitem" data-page="people">♧ <span>Team &
+                        partners</span></button></nav>
+            <div class="side-label side-label-bottom">INTELLIGENCE</div><button class="navitem" id="navAssistant">✧
+                <span>Engineering agent</span><span class="newtag">LIVE DEMO</span></button>
+            <div class="sidebar-foot">
+                <div class="avatar">DE</div>
+                <div><strong>Digital Engineering</strong><small>Portfolio environment</small></div><span
+                    class="online"></span>
+            </div>
+        </aside>
+        <div class="mainwrap">
+            <header class="topbar">
+                <div class="breadcrumb">Constellation role alignment <span> / </span> <b id="crumb">Overview</b></div>
+                <div class="topright"><span class="demo"><span class="dot"></span> DEMO ENVIRONMENT</span><button
+                        id="reset" class="iconbtn" title="Reset demo data">↻</button><button class="useravatar"
+                        title="Demo profile">DE</button></div>
+            </header>
+            <main id="content"></main>
+            <footer>Independent engineering portfolio demo · Synthetic data · Not affiliated with Constellation Energy
+            </footer>
+        </div>
+        <aside id="assistant" class="assistant hidden">
+            <div class="assist-top">
+                <div class="assist-icon">✧</div>
+                <div><strong>Engineering Copilot</strong><small><span class="dot"></span> Offline knowledge
+                        assistant</small></div><button id="closeAssistant" class="xbtn"
+                    aria-label="Close assistant">×</button>
+            </div>
+            <div class="assist-context">CONTEXT <span id="assistContext">OVERVIEW</span></div>
+            <div id="messages" class="messages" aria-live="polite"></div>
+            <div class="suggestions" id="suggestions"></div>
+            <div class="chatinput">
+                <form id="chatForm"><input id="question" autocomplete="off"
+                        placeholder="Ask about delivery, Azure, .NET..." aria-label="Message to assistant"><button
+                        type="submit" aria-label="Send message">➤</button></form><small>Local rules-based demo · No
+                    generative model or live system access</small>
+            </div>
+        </aside>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
